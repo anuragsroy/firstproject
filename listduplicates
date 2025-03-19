@@ -1,0 +1,18 @@
+n=int(input("Enter the number of elements of the list:"))
+count=0
+list=[]
+duplicate=[]
+for i in range(0,n+1,1):
+    element=input("i:")
+    list.append(element)
+print("The list is: ",list)
+for j in range(0,n,1):
+
+    count=0
+    for k in range(j+1,n+1,1):
+        if list[j]==list[k]:
+            duplicate.append(list[j])
+            count=count+1
+
+    if count>0:
+      print(count+1)
